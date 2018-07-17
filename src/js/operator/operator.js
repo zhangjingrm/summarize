@@ -6,7 +6,7 @@ console.log(operand); //12
 //加法赋值   x += y  =>  x = x + y  operator/add_assignment.js
 
 
-//减法赋值   x -= y  =>  x = x - y  
+//减法赋值   x -= y  =>  x = x - y  operator/sub_assignment.js
 
 
 //乘法赋值   x *= y  =>  x = x * y

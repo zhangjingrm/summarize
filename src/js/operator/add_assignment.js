@@ -8,6 +8,7 @@ var hobby = ['a', 'b', 'c']
 //两个表达式都为数字或布尔值，添加
 //两个表达式都是字符串，连接
 //一个是字符串，另一个是数字或者布尔值，连接
+//Array会被解析成字符串，Object会变成[object Object] 然后进行连接计算
 
 /* Number + Number => addition 默认每次赋初值，下同*/
 age += 2 //14
@@ -27,6 +28,7 @@ name += 'lisi' //'zhanglisi'
 /* String + Boolean => concatenation */
 name += true //'zhangtrue'
 
+/*-------------------------------------------------------------------------------------------*/
 
 /* Array + Boolean => concatenation */
 hobby += true //'a,b,ctrue'
@@ -38,5 +40,8 @@ hobby += '12' //'a,b,c12'
 hobby += 12 //'a,b,c12'
 
 /* Array + Array => concatenation */
+hobby += ['d'] //'a,b,cd'
+
+/* Object +  => concatenation */
 hobby += ['d'] //'a,b,cd'
 
