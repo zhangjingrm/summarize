@@ -69,3 +69,14 @@ console.log(operand); //12
 //->11111111111111111111111111110110(-9)
 // 1111(返回的结果)
 // 将任一数值 x 与 0 进行按位或操作，其结果都是 x。将任一数值 x 与 -1 进行按位或操作，其结果都为 -1
+
+
+//解构赋值 deconstruction_assignment.js
+
+
+//比较运算符 comparison_operator.js
+
+
+
+
+
