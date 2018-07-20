@@ -76,6 +76,11 @@ console.log(operand); //12
 
 //比较运算符 comparison_operator.js
 
+//算数运算符 arithmetic_operator.js
+
+//其他运算符 other_operator.js
+//（条件运算符，逗号操作符，一元操作符-delete、typeof、void，关系操作符，instanceof）
+
 
 
 
