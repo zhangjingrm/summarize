@@ -77,7 +77,36 @@ typeof Math.sin === 'function';
 typeof new Function() === 'function';
 
 
-//5.instanceof
+//5.instanceof (object instanceof constructor)
+// 用来检测 constructor.prototype 是否存在于参数 object 的原型链上。
+function C(){} 
+function D(){} 
+
+var o = new C();
+
+o instanceof C; //true
+o instanceof D; //false
+o instanceof Object; //true
+C.prototype instanceof Object; //true
+
+C.prototype = {};
+var o2 = new C();
+o2 instanceof C; //true
+o instanceof C; //false
+
+D.prototype = new C();
+var o3 = new D();
+o3 instanceof D; // true
+o3 instanceof C; // true 因为C.prototype现在在o3的原型链上
+
+
+
+
+
+
+
+
+
 
 
 
