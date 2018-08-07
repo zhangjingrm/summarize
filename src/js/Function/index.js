@@ -5,4 +5,7 @@
 
 
 
-//3.特殊函数 specialFunction.js
+//3.特殊函数 specialFunction.js（回调函数，函数防抖，函数节流）
+
+
+//4.匿名函数 anonymousFunction.js（匿名函数，闭包，立即执行函数）
