@@ -9,3 +9,8 @@
 
 
 //4.匿名函数 anonymousFunction.js（匿名函数，闭包，立即执行函数）
+
+
+//5.函数柯里化 curry.js
+
+//6.apply call bind
