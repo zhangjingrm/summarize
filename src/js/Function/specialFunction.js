@@ -60,12 +60,12 @@ function _throttle(fn, wait, time) {
     if (!previous) previous = now;
     if (now - previous > time) {
       clearTimeout(timer);
-      fn();
+      fn.apply(this, arguments)
       previous = now;
     } else {
       clearTimeout(timer);
       timer = setTimeout(() => {
-      	fn();
+      	fn.apply(this, arguments)
       }, wait);
     }
   }
