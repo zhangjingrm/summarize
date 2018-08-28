@@ -56,23 +56,28 @@ function _throttle(fn, wait, time) {
   var previous = null; //记录上一次运行的时间
   var timer = null;
   return function() {
+    if (timer) clearTimeout(timer);
+
     var now = +new Date();
-    if (!previous) previous = now;
+    if (now - previous > 1000) {
+      previous = null;
+    }
+    if (!previous) {
+      previous = now
+    }
     if (now - previous > time) {
-      clearTimeout(timer);
       fn.apply(this, arguments)
       previous = now;
     } else {
-      clearTimeout(timer);
       timer = setTimeout(() => {
-      	fn.apply(this, arguments)
+        fn.apply(this, arguments)
       }, wait);
     }
   }
 }
 
 var btn3 = document.getElementById('btn3');
-btn3.addEventListener('click', _throttle(_log, 500, 500));
+btn3.addEventListener('click', _throttle(_log, 500, 1000));
 
 
   //应用场景
